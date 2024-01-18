@@ -2,12 +2,7 @@
   "name": "@monorepo-dep/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {
-    "build:first-app": "nx build first-app --prod",
-    "build:second-app": "nx build second-app --prod",
-    "build:server": "nx build server --prod",
-    "start:server": "node dist/apps/server/main.js"
-  },
+  "scripts": {},
   "private": true,
   "dependencies": {
     "@swc/helpers": "~0.5.2",
