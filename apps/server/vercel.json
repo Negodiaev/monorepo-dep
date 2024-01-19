@@ -2,8 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/main.ts",
-      "use": "@vercel/node"
+      "src": "project.json",
+      "use": "@vercel/node",
+      "config": {
+        "buildCommand": "nx build server --prod",
+        "outputDirectory": "dist/apps/server",
+        "nodeVersion": "18.x",
+        "startCommand": "node dist/apps/server/main.js"
+      }
     }
   ],
   "routes": [
