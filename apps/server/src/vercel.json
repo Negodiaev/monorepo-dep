@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "buildCommand": "nx build server --prod",
+  "outputDirectory": "dist/apps/server",
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "nodejs14.x"
+    }
+  }
+}
