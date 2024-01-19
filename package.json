@@ -5,7 +5,8 @@
   "scripts": {
     "build:server": "nx build server",
     "build:first-app": "nx build first-app",
-    "build:second-app": "nx build second-app"
+    "build:second-app": "nx build second-app",
+    "start:server": "node dist/apps/server/main.js"
   },
   "private": true,
   "dependencies": {
