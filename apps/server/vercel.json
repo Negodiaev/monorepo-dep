@@ -1,11 +1,19 @@
 {
   "version": 2,
-  "buildCommand": "nx build server",
-  "outputDirectory": "dist/apps/server",
+  "builds": [
+    {
+      "src": "apps/server/src/main.ts",
+      "use": "@vercel/node",
+      "config": {
+        "buildCommand": "nx build server",
+        "outputDirectory": "dist/apps/server"
+      }
+    }
+  ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "dist/apps/server/main.js"
+      "dest": "/dist/apps/server/$1"
     }
   ]
 }
