@@ -1,10 +1,19 @@
 {
   "version": 2,
-  "buildCommand": "nx build server --prod",
-  "outputDirectory": "dist/apps/server",
-  "functions": {
-    "api/**/*.ts": {
-      "runtime": "nodejs14.x"
+  "builds": [
+    {
+      "src": "project.json",
+      "use": "@vercel/node",
+      "config": {
+        "buildCommand": "nx build server --prod",
+        "outputDirectory": "dist/apps/server"
+      }
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/apps/server/main.js"
+    }
+  ]
 }
