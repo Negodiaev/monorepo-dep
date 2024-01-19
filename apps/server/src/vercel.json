@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "project.json",
-      "use": "@vercel/node",
+      "use": "@now/node",
       "config": {
         "buildCommand": "nx build server --prod",
         "outputDirectory": "dist/apps/server"
