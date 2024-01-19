@@ -5,7 +5,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "src/main.ts"
+      "dest": "dist/apps/server/main.js"
     }
   ]
 }
