@@ -49,5 +49,8 @@
       }
     }
   },
-  "tags": []
+  "tags": [],
+  "scripts": {
+    "start": "node dist/apps/server/main.js"
+  }
 }
