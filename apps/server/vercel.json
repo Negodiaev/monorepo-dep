@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "project.json",
+      "src": "dist/apps/server/main.js",
       "use": "@vercel/node",
       "config": {
         "buildCommand": "nx build server --prod",
