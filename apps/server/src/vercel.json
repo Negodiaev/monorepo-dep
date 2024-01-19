@@ -2,18 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "project.json",
-      "use": "@now/node",
-      "config": {
-        "buildCommand": "nx build server --prod",
-        "outputDirectory": "dist/apps/server"
-      }
+      "src": "main.ts",
+      "use": "@now/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/apps/server/main.js"
+      "dest": "main.js"
     }
   ]
 }
