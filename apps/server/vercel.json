@@ -7,14 +7,14 @@
       "config": {
         "buildCommand": "nx run server:build:production",
         "outputDirectory": "dist/apps/server",
-        "startCommand": "node dist/apps/server/main.js"
+        "startCommand": "node src/main.ts"
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/apps/server/main.js"
+      "dest": "src/main.ts"
     }
   ]
 }
