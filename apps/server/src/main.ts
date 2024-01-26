@@ -21,6 +21,10 @@ app.get('/api/hello', (req, res) => {
   res.send('Hello from Express.js!');
 });
 
+app.get('/api/test-route', (req, res) => {
+  res.send({  message: 'A test route' });
+});
+
 const port = process.env.PORT || 3333;
 const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/api`);
